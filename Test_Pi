@@ -1,0 +1,13 @@
+public class Test_Pi {
+    public static void main(String[] args) throws Exception {
+        // Test 1 : 10 itérations, 1 worker 
+        System.out.println("Test 1: 10 itérations, 1 worker");
+        long total1 = new Master().doRun(10, 1);  
+        System.out.println("Total from Master = " + total1);
+        
+        // Test 2 : 10000 itérations, 5 workers
+        System.out.println("\nTest 3: 10000 itérations, 5 workers");
+        long total3 = new Master().doRun(10000, 5);  
+        System.out.println("Total from Master = " + total3);
+    }
+}
